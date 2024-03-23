@@ -1,0 +1,176 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+.wrapper{
+  margin: 4rem 0;
+}
+.card{
+  min-height: 20rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+.card img{
+  border-radius: 2rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+
+}
+.card p{
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%,0);
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  height: 15%;
+}
+
+.gradient{
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0,0,0,0),rgba(0,0,0,0.5)
+  );
+}
+.category-list{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
+  gap: 2rem;
+}
+.grid-card{
+  margin: 0.5rem 0 ;
+}
+.grid-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.grid-card h4{
+  text-align: center;
+}
+.category-link{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(35deg,#494949,#313131);
+  border-radius: 50%;
+  margin-right: 2rem;
+  text-decoration: none;
+  width: 6rem;
+  height: 6rem;
+  transform: scale(0.8);
+}
+.category-link h4{
+  color: white;
+  font-size: 0.9rem;
+}
+.category-link svg{
+  color: white;
+  font-size: 1.5rem;
+}
+.category-link:focus{
+  background: linear-gradient(
+    to right,#f27121,#e94057
+  );
+}
+.category-link:focus svg,
+.category-link:focus h4{
+  color: white;
+}
+
+form{
+  /* margin: 0 20; */
+  width: 100%;
+  position: relative;
+  
+
+}
+form input{
+  background: linear-gradient(
+    35deg,#494949,#313131
+  );
+  border: none;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  outline: none;
+  width: 100%;
+}
+.details-wrapper{
+  margin-top: 5rem;
+  display: flex;
+  gap: 2rem;
+}
+.header{
+  padding: 2rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header svg{
+  font-size: 2rem;
+}
+.header-link{
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: cursive;
+  font-weight: 400;
+  color: #313131;
+}
